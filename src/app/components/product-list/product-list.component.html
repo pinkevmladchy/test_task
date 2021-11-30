@@ -1,0 +1,26 @@
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Додати товар</button>
+<div class="row list">
+    <div class="col-3" *ngFor="let prod of listProducts">
+        <div class="card" style="width: 18rem;">
+            <div class="image">
+                <img class="card-img-top image" src="{{prod.imageUrl}}">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{prod.name}}</h5>
+              <p class="card-text">В наявності: {{prod.count}}</p>
+              <hr>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg" (click)="setSelectedProduct(prod)">Придбати</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-modal-add-product
+(productAddedEvent)="addProduct($event)">
+</app-modal-add-product>
+
+<app-modal-view-edit-delete
+[setData] = "this.selectedProduct"
+(deletedProductEvent)="deleteProduct($event)"
+(productEditedEvent)="editProduct($event)">
+</app-modal-view-edit-delete>

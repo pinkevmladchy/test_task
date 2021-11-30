@@ -1,0 +1,78 @@
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">View product</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form [formGroup]="productForm">
+            <div class="row">
+              <div class="form-group col-2">
+                <img id="image" src="https://img.mta.ua/image/cache/data/foto/z326/326348/photos/Apple-iPhone-12-128Gb-Black-Purple-01-100x100.jpg">
+              </div>
+              <div class="form-group col-5">
+                <label>Name</label>
+                <input type="text" formControlName="name" class="form-control" placeholder="Enter name" required>
+              </div>
+              <div class="form-group col-5">
+                  <label>Count</label>
+                  <input type="text" formControlName="count" class="form-control" placeholder="Enter count" required>
+              </div>
+              <div class="form-group col-4">
+                  <label>Weight</label>
+                  <input type="text" formControlName="weight" class="form-control" placeholder="Enter weight" required>
+              </div>
+              <div class="col-4">
+                <label>Width</label>
+                <input type="text" formControlName="width" class="form-control" placeholder="Enter width" required>
+              </div>
+              <div class="col-4">
+                  <label>Height</label>
+                  <input type="text" formControlName="height" class="form-control" placeholder="Enter height" required>
+              </div>
+            </div>
+            <hr>
+            <div class="comments">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Comment</th>
+                    <th scope="col">Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of comments">
+                    <td>{{item.description}}</td>
+                    <td>{{item.date}}</td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr>
+              <form [formGroup]="commentForm" (ngSubmit)="addComment(commentForm)">
+                <div class="row">
+                   <div class="col-9">
+                     <input class="form-control com" formControlName="description" placeholder="Enter comment" type="text">
+                   </div>
+                   <div class="col-3">
+                     <button class="btn btn-primary myBtn" type="submit">Add</button>
+                    </div>
+                </div>
+              </form>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <button type="submit" id="btnClose" class="btn btn-primary myBtn" data-dismiss="modal">Змінити</button>
+              </div>
+              <div class="col-6">
+                <button type="submit" class="btn btn-danger myBtn" (click)="onDelete()">Видалити товар</button>
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>

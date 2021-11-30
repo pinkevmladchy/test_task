@@ -1,0 +1,144 @@
+{
+  "Product": [
+    {
+      "id": 1,
+      "imageUrl": "https://i2.price.ua/images/model/52/3060403/2/1/type2/apple_iphone_x_64gb_4163140.jpg",
+      "name": "iPhone X",
+      "count": 21,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "190g",
+      "comments": [
+        "CommentModel",
+        "CommentModel"
+      ]
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://photo.kvshop.com.ua/products/142/142768/apple-iphone-11-128gb-black-d1.s.jpg",
+      "name": "iPhone XS",
+      "count": 13,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "220g",
+      "comments": [
+        "CommentModel",
+        "CommentModel"
+      ]
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://i2.price.ua/images/model/52/3060403/2/1/type2/apple_iphone_x_64gb_4163140.jpg",
+      "name": "iPhone 5",
+      "count": 13,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "220g",
+      "comments": [
+        "CommentModel",
+        "CommentModel"
+      ]
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://img.mta.ua/image/cache/data/foto/z326/326348/photos/Apple-iPhone-12-128Gb-Black-Purple-01-100x100.jpg",
+      "name": "iPhone 13 PRO MAX",
+      "count": 13,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "220g",
+      "comments": [
+        "CommentModel",
+        "CommentModel"
+      ]
+    }
+  ],
+  "Comment": [
+    {
+      "id": 1,
+      "productId": 1,
+      "description": "first comment",
+      "date": "14:00 22.08.2021"
+    },
+    {
+      "id": 2,
+      "productId": 1,
+      "description": "second comment",
+      "date": "14:00 22.08.2021"
+    },
+    {
+      "id": 3,
+      "productId": 1,
+      "description": "third comment",
+      "date": "14:00 22.08.2021"
+    },
+    {
+      "id": 4,
+      "productId": 4,
+      "description": "SOLIDNO",
+      "date": "14:00 22.08.2021"
+    },
+    {
+      "id": 5,
+      "productId": 3,
+      "description": "5 RATES",
+      "date": "14:00 22.08.2021"
+    },
+    {
+      "id": 6,
+      "productId": 2,
+      "description": "2 rates",
+      "date": "14:00 22.08.2021"
+    },
+    {
+      "id": 90,
+      "productId": 2,
+      "description": "123",
+      "date": "2021-11-30T19:21:21.645Z"
+    },
+    {
+      "id": 8,
+      "productId": 2,
+      "description": "123456",
+      "date": "2021-11-30T19:21:30.813Z"
+    },
+    {
+      "id": 44,
+      "productId": 2,
+      "description": "123",
+      "date": "2021-11-30T19:24:18.944Z"
+    },
+    {
+      "id": 88,
+      "productId": 3,
+      "description": "3 RATES",
+      "date": "2021-11-30T19:24:38.205Z"
+    },
+    {
+      "id": 30,
+      "productId": 3,
+      "description": "3 RATES",
+      "date": "2021-11-30T19:24:40.285Z"
+    },
+    {
+      "id": 39,
+      "productId": 3,
+      "description": "qwe",
+      "date": "2021-11-30T19:24:47.297Z"
+    },
+    {
+      "id": 42,
+      "productId": 3,
+      "description": "rqw",
+      "date": "2021-11-30T19:24:49.469Z"
+    }
+  ]
+}
