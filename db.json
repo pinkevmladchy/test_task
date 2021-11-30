@@ -3,32 +3,20 @@
     {
       "id": 1,
       "imageUrl": "https://i2.price.ua/images/model/52/3060403/2/1/type2/apple_iphone_x_64gb_4163140.jpg",
-      "name": "iPhone X",
+      "name": "iPhone X/10",
       "count": 21,
-      "size": {
-        "width": 200,
-        "height": 200
-      },
       "weight": "190g",
-      "comments": [
-        "CommentModel",
-        "CommentModel"
-      ]
+      "height": 200,
+      "width": 200
     },
     {
       "id": 2,
       "imageUrl": "https://photo.kvshop.com.ua/products/142/142768/apple-iphone-11-128gb-black-d1.s.jpg",
       "name": "iPhone XS",
-      "count": 13,
-      "size": {
-        "width": 200,
-        "height": 200
-      },
-      "weight": "220g",
-      "comments": [
-        "CommentModel",
-        "CommentModel"
-      ]
+      "count": "9",
+      "weight": "200g",
+      "height": "210",
+      "width": "210"
     },
     {
       "id": 3,
@@ -48,17 +36,11 @@
     {
       "id": 4,
       "imageUrl": "https://img.mta.ua/image/cache/data/foto/z326/326348/photos/Apple-iPhone-12-128Gb-Black-Purple-01-100x100.jpg",
-      "name": "iPhone 13 PRO MAX",
+      "name": "iPhone 13 PRO Max",
       "count": 13,
-      "size": {
-        "width": 200,
-        "height": 200
-      },
       "weight": "220g",
-      "comments": [
-        "CommentModel",
-        "CommentModel"
-      ]
+      "height": 200,
+      "width": 200
     }
   ],
   "Comment": [
@@ -139,6 +121,18 @@
       "productId": 3,
       "description": "rqw",
       "date": "2021-11-30T19:24:49.469Z"
+    },
+    {
+      "id": 75,
+      "productId": 4,
+      "description": "123",
+      "date": "2021-11-30T19:48:37.319Z"
+    },
+    {
+      "id": 37,
+      "productId": 1,
+      "description": "123",
+      "date": "2021-11-30T20:01:13.074Z"
     }
   ]
 }

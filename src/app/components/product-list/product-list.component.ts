@@ -58,7 +58,8 @@ export class ProductListComponent implements OnInit {
   }
 
   editProduct($event: Product){
-    this.productService.editProduct($event)
+    console.log($event);
+    this.productService.editProduct(this.selectedProduct.id, $event)
     .subscribe((data: any) => {
       this.listProducts.push($event);
       this.toastr.success("Product was edited", "Success");
@@ -90,5 +91,6 @@ export class ProductListComponent implements OnInit {
 
   setSelectedProduct(selected: Product) {
     this.selectedProduct = selected;
+    selected.comments = [];
   }
 }

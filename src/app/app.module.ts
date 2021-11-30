@@ -4,7 +4,6 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
-import { ProductViewComponent } from './components/product-view/product-view.component';
 import { ToastrModule } from 'ngx-toastr';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,7 +14,6 @@ import { ModalViewEditDeleteComponent } from './components/product-list/modal-vi
   declarations: [
     AppComponent,
     ProductListComponent,
-    ProductViewComponent,
     ModalAddProductComponent,
     ModalViewEditDeleteComponent
   ],

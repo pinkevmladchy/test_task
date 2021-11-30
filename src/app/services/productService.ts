@@ -31,7 +31,7 @@ export class ProductService {
     return this.http.delete<any>(`http://localhost:3000/Product/${id}`, httpOptions);
   }
 
-  editProduct(product: Product){
-    return this.http.put<any>(`http://localhost:3000/Product`, product, httpOptions);
+  editProduct(id: number, product: Product){
+    return this.http.put<any>(`http://localhost:3000/Product/${id}`, product, httpOptions);
   }
 }

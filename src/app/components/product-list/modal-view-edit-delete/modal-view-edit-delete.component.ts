@@ -43,6 +43,7 @@ export class ModalViewEditDeleteComponent implements OnInit {
   }
 
   getAllComments(id: number){
+    this.comments = [];
     this.commentService.getCommentsByIdProduct(id)
     .subscribe((data)=>{
       console.log(data);
@@ -54,6 +55,7 @@ export class ModalViewEditDeleteComponent implements OnInit {
   }
 
   populateForm(selected: Product){
+    console.log(selected.id);
     this.productForm.setValue({
       id: selected.id,
       imageUrl: selected.imageUrl,
@@ -63,6 +65,7 @@ export class ModalViewEditDeleteComponent implements OnInit {
       height: selected.size.height,
       width: selected.size.width
     })
+    this.comments = [];
     this.getAllComments(selected.id);
   }
 
@@ -87,6 +90,7 @@ export class ModalViewEditDeleteComponent implements OnInit {
     this.productForm.reset();
 
     this.productEditedEvent.emit(newProduct);
+    this.comments = [];
   }
 
   addComment(comment: any){
@@ -103,6 +107,7 @@ export class ModalViewEditDeleteComponent implements OnInit {
     this.commentService.addComment(addComment)
     .subscribe((data)=>{
       this.toastr.success("Comment was adding","Success")
+      this.comments = [];
       this.getAllComments(this.productForm.value.id);
     },
     (err)=>{
@@ -112,5 +117,9 @@ export class ModalViewEditDeleteComponent implements OnInit {
 
   onDelete(){
     this.deletedProductEvent.emit(this.productForm.value.id);
+  }
+
+  onEdit(){
+    this.productEditedEvent.emit(this.productForm.value);
   }
 }
